@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="24dp"
+    android:paddingBottom="24dp"
+    android:background="@drawable/loginapp_background"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@android:dimen/thumbnail_height"
+        android:alpha="0.6"
+        android:background="@drawable/custom_input"
+        android:drawableLeft="@drawable/custom_email"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:alpha="0.6"
+        android:background="@drawable/custom_input"
+        android:drawableLeft="@drawable/custom_lock"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:alpha="0.5"
+        android:background="@drawable/custom_input"
+        android:fontFamily="serif-monospace"
+        android:padding="8dp"
+        android:text="LOGIN" />
+
+    <TextView
+        android:id="@+id/tv_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_login"
+        android:text="Don't have an Account? Create Account"/>
+</RelativeLayout>

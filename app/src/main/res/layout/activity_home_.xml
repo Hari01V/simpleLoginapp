@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="24dp"
+    android:paddingBottom="24dp"
+    android:background="@drawable/loginapp_background2"
+    tools:context=".Home_Activity">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="HOME ACTIVITY !"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/btn_signout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:alpha="0.5"
+        android:background="@drawable/custom_input"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="Sign Out"
+        android:textColor="#000000" />
+
+</RelativeLayout>
